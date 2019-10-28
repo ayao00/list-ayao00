@@ -17,8 +17,21 @@ int main(){
   printf("Printing List\n");
   print_list(list);
 
+  printf("Removing 9:\n");
+  list = node_remove(list,9);
+  print_list(list);
+  printf("Removing 4:\n");
+  list = node_remove(list,4);
+  print_list(list);
+  printf("Removing 0:\n");
+  list = node_remove(list,0);
+  print_list(list);
+  printf("Removing -1:\n");
+  list = node_remove(list, -1);
+  print_list(list);
+
   printf("Freeing List\n");
-  free_list(list);
+  list = free_list(list);
   print_list(list);
 
 }
