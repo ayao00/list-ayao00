@@ -21,5 +21,4 @@ int main(){
   free_list(list);
   print_list(list);
 
-  printf("Testing remove\n");
 }
